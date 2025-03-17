@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anushka Bandara</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Anushka Bandara</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#beyondAcademia">Beyond Academia</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Anushka Bandara</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#publications" onclick="toggleMenu()">Publications</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#beyondAcademia" onclick="toggleMenu()">Beyond Academia</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/profile_picture.jpg" alt="Profile picture" class="about-pic" />
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Anushka Bandara</h1>
+            <p class="section__text__p2"> <strong>Research Engineer</strong> </p>
+            <p class="section__text__p1"> at the
+                <a href="https://marcuop.netlify.app/" target="_blank" style="color: grey; text-decoration: underline;">Multidisciplinary AI Research Centre (MARC)</a>
+            </p>
+            <p class="section__text__p2">M.Phil (Reading) Electrical and Electronic Engineering</p>
+            <p class="section__text__p1">University of Peradeniya, Sri Lanka</p>
+            <p class="section__text__p2">B.Sc (Special) Applied Electronics</p>
+            <p class="section__text__p1">Wayamba University of Sri Lanka</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('https://drive.google.com/file/d/12SkXmCIw52a0xYiLhk4tEqk78vksoLDR/view?usp=sharing')">
+            Download CV
+          </button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon" onclick="location.href='https://www.linkedin.com/in/anushka-bandara-750357166 '" />
+                <a href="https://www.linkedin.com/in/anushka-bandara-750357166" target="_blank" style="color: black;">LinkedIn</a>
+                <img src="./assets/google-scholar-50.png" alt="My Google Scholar profile" class="icon" onclick="location.href='https://scholar.google.com/citations?user=CNYirOsAAAAJ&hl=en&oi=ao'" />
+                <a href="https://scholar.google.com/citations?user=CNYirOsAAAAJ&hl=en&oi=ao" target="_blank" style="color: black;">Google Scholar</a>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <!--
+        <div class="section__pic-container">
+          <img
+            src="./assets/ViDula Shishan Photography-1548 1_1.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+      -->
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+                        <h3>Education</h3>
+                        <p>M.Phil (Reading) Electrical and Electronic Engineering <br />University of Peradeniya, Sri Lanaka </p>
+                        <p>B.Sc (Special) Applied Electronics <br /> Wayamba University of Sri Lanka</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/education.png" alt="Education icon" class="icon" />
+                        <h3>Professional Experience</h3>
+                        <p>Research Engineer [Multidisciplinary AI Research Centre] : Apr 2024 - Present <br />Research Engineer [Department of Electrical & Electronics Engineering] : Jan 2024 - Mar 2024 <br /> Research Assistant [Smart Grid Laboratory] : Oct 2022 - Dec 2023</p>
+                    </div>
+                </div>
+                <div class="justified-text">
+                    <p>
+                        I am a self-motivated, diligent and trustworthy person with the ability to overcome challenging situations. With a deep understanding of power electronics and power systems, I focus on designing intelligent solutions for renewable energy applications, including solar PV forecasting, energy storage modeling, and grid integration.I thrive in both collaborative research environments and independent problem-solving roles, always striving to overcome challenges and drive impactful advancements in renewable energy and machine learning
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+        <section id="publications">
+            <h2 class="section-title">Publications</h2>
+            <ol class="publication-list">
+
+                <li>
+                    <a href="https://doi.org/10.3390/electronics13244875" target="_blank"> LSTM-Based MPPT Algorithm for Efficient Energy Harvesting of a Solar PV System Under Different Operating Conditions</a> -
+                    <strong>Anushka Bandara</strong>,  Keshawa Rathnayake, Ramitha Disanayake, Harith Udawatte, Roshan Godaliyadda, Parakrama Ekanayake, Published in the MDPI Electronics (section:<strong>Power electronics</strong>, Impact Factor: 2.6)
+                </li>
+                <li>
+                     “Comparative analysis of Deep learning Model for Solar irradiance forecasting” Peradeniya University International Research Session <strong>(IPURSE) </strong>- 2023 <strong>Bandara A.S.</strong>, R.I. Godaliyadda, J. Ekanayake.
+                </li>
+            </ol>
+        </section>
+
+        <section id="projects">
+            <p class="section__text__p1">Browse My Ongoing</p>
+            <h1 class="title">Projects</h1>
+            <div class="experience-details-container">
+                <div class="about-containers">
+                    <div class="details-container color-container">
+                        <div class="article-container">
+                            <h2 class="experience-sub-title project-title">Open source solar PV inverter design</h2>
+                            <div class="justified-text">
+                                Photovoltaic (PV) energy is emerging as one of the mainstream power sources. In Sri Lanka, imported inverters are used for the grid connection of PV plants. The proprietary inverters do not allow accessing control functions implemented already.  As a result, the utility does not have the flexibility to introduce even the essential grid supporting functions required on these inverters. In this project, a single-phase open-source solar PV inverter is developed providing the flexibility to access and edit grid supporting functions required to integrate the PV system to distribution network in the grid. The inverter and boost converter is designed, hardware-implemented, and tested. Since this is a smart device, various MPPT algorithms, active power control functions, reactive power control functions can be introduced in the boost converter and in the inverter, respectively.
+                            </div>
+                            <!-- Image -->
+                            <div class="media-container">
+                                <img src="./assets/methodology.png" alt="Generated Samples from DDPM" class="project-media" />
+                                <p class="media-caption">Inverter design process</p>
+                            </div>
+                            <div class="media-container">
+                                <video controls class="project-media">
+                                    <source src="./assets/solar_inverter.mp4" type="video/mp4" />
+                                        Your browser does not support the video tag.
+                                 </video>
+                                <p class="media-caption">Grid connected operation of the inverter with solar</p>
+                            </div>
+
+                            <div class="project-image-grid">
+                            <div class="media-container">
+                                <img src="./assets/iPurse_inverter.jpg" alt="Generated Samples from DDPM" class="project-media" />
+                                <p class="media-caption">Demonstrate designed inverter at iPurse international exhibition 2023</p>
+                            </div>
+                            <div class="media-container">
+                                <img src="./assets/openDay_inverter.jpg" alt="Generated Samples from DDPM" class="project-media" />
+                                <p class="media-caption">Demonstrate designed inverter at Open Day -2023 University of Peradeniya</p>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="details-container color-container">
+                        <div class="article-container">
+                            <h2 class="experience-sub-title project-title">Change over arrangement for grid connected inverter to off-grid of solar PV system </h2>
+                            <p class="project-description">
+                                <div class="justified-text">
+                                     <h1>Introduction</h1>
+                                        <ul>
+                                            <li>Basically, the grid-tied inverters are designed to power off when there is a utility power outage.</li>
+                                            <li>At daytime, these types of inverters create a major drawback when solar generation is maximum.</li>
+                                            <li>To overcome this drawback, this research study designed a changeover arrangement for grid-connected inverters to operate in off-grid mode in domestic applications.</li>
+                                            <li>The designed system is capable of utilizing solar energy effectively and thereby providing cost-effective solutions to power-related issues.</li>
+                                        </ul>
+                                        
+                                        <h2>Objectives</h2>
+                                        <ul>
+                                            <li>A changeover arrangement is provided to operate home appliances in a solar PV plant during a grid interruption.</li>
+                                            <li>The system mainly focuses on operating essential loads like computers, WiFi routers, and televisions without interruption when there is a power outage.</li>
+                                            <li>A change-over arrangement comprising of:
+                                                <ul>
+                                                    <li>A number of solid-state relays, a microcontroller board, a dump load, and a remote-controlled mains socket.</li>
+                                                    <li>The relays are connected to the grid, the PV inverter, a UPS, and a dump load.</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                </div>
+                                <video controls class="project-media">
+                                    <source src="./assets/demonstration video of the final system .mp4" type="video/mp4" />
+                                        Your browser does not support the video tag.
+                                 </video>
+                            </p>
+                        </div>
+                    </div>
+                     <div class="details-container color-container">
+                        <div class="article-container">
+                            <h2 class="experience-sub-title project-title">Deep Learning based Novel MPPT Algorithm for Solar PV Appliances </h2>
+                            <p class="project-description">
+                                <div class="justified-text">
+                                    The study introduces a novel MPPT algorithm utilizing Artificial neural networks and irradiance forecasting to maximize solar panel power output, validated with real data from Sri Lanka. Results show significant improvement over conventional methods, with faster response times and improved performance in varied weather conditions.
+                                </div>
+                            <div class="media-container">
+                                <img src="./assets/Figure 1.png" alt="Generated Samples from DDPM" class="project-media" />
+                                <p class="media-caption">Proposed LSTM and FNN combined MPPT system</p>
+                            </div>
+                             <div class="media-container">
+                                <img src="./assets/Figure 2.jpg" alt="Generated Samples from DDPM" class="project-media" />
+                                <p class="media-caption">Demonstrate project at MARC exhibition Jan - 2024</p>
+                            </div>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+        </section>
+
+        <section id="beyond-academia">
+            <p class="section__text__p1">This is what I do</p>
+            <h1 class="title">Beyond Academia</h1>
+            <div class="beyond-container">
+                <div class="beyond-item">
+                    <div class="beyond-images">
+                        <img src="assets\Figure 3.jpg" alt="AI Awareness Program">
+                        <img src="assets\Figure 4.jpg" alt="AI Awareness Program Alternate">
+                    </div>
+                    <div class="beyond-text">
+                        <h3>A Journey into AI:</h3>
+                        <div class="justified-text">
+                            Participated in the AI awareness program organized by the Multidisciplinary AI Research Centre at the University of Peradeniya. Delivered an engaging session by introducing school students to the fundamentals of Artificial Intelligence, its real-world
+                            applications, and its potential to shape the future. The session aimed to inspire the next generation of innovators in AI.
+                        </div>
+
+                    </div>
+                </div>
+
+                <div >
+                    <h3>Sri Lanka’s first-ever semi-transparent Solar PV powered Agrivoltaic pilot project</h3>
+                        
+                </div>
+                <div class="justified-text">
+                    <p> This project integrated solar energy production with agricultural activities, optimizing land use while promoting renewable energy adoption. Contributed to system analysis, performance evaluation, and the study of its impact on crop yield and energy generation.</p>
+                </div>
+                <div class="beyond-item">
+                    <div class="beyond-images">
+                        <img src="assets\Figure 10.jpg" alt="YouTube Channel">
+                        <img src="assets\Figure 5.jpg" alt="YouTube Channel">
+                        <img src="assets\Figure 6.jpg" alt="YouTube Channel Alternate">
+                        <img src="assets\Figure 8.jpg" alt="YouTube Channel">
+                        <img src="assets\Figure 9.jpg" alt="YouTube Channel Alternate">
+                    </div>
+
+                </div>
+                <!-- <div class="beyond-item">
+                    <div class="beyond-images">
+                        <img src="assets\Hair Donation 1.jpg" alt="Hair Donation">
+                        <img src="assets\Hair Donation 2.jpg" alt="Hair Donation Alternate">
+                    </div>
+                    <div class="beyond-text">
+                        <h3>Hair Donation for Cancer Patients</h3>
+                        <div class="justified-text">Donated hair to the <a href="https://www.littleprincesses.org.uk/" target="_blank" style="color: blue;">Little Princess Trust</a> to support the creation of wigs for children and young people battling cancer. This heartfelt contribution
+                            aimed to bring comfort and confidence to those facing challenging circumstances.</div>
+                    </div>
+                </div>
+                <div class="beyond-item">
+                    <div class="beyond-video">
+                        <iframe src="https://www.youtube-nocookie.com/embed/LEnqh4Oiv3M?si=j_p3BtZjRfBRLaiy" title="Bittersweet - Short Movie" width="150px" height="150px" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+            </iframe>
+                    </div>
+                    <div class="beyond-text">
+                        <h3>Bittersweet - Short Movie</h3>
+                        <div class="justified-text">Produced "Bittersweet," a short film during my undergraduate studies as part of the "Introduction to Digital Art" course. The story follows a university student's journey, highlighting how the decisions we make shape our experiences.
+                            It emphasizes that life’s sweetness or bitterness is in our hands, encouraging viewers to take responsibility for their own happiness rather than blaming others.
+                        </div>
+                    </div>
+                </div> --> 
+
+            </div>
+        </section> 
+
+
+        <section id="contact">
+            <p class="section__text__p1">Get in Touch</p>
+            <h1 class="title">Contact Me</h1>
+            <div class="contact-info-upper-container">
+                <div class="contact-info-container">
+                    <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+                    <p><a href="mailto:anushkabandara41@gmail.com">anushkabandara41@gmail.com</a></p>
+                </div>
+                <div class="contact-info-container">
+                    <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+                    <p><a href="https://www.linkedin.com/in/anushka-bandara-750357166">LinkedIn</a></p>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <nav>
+                <div class="nav-links-container">
+                    <ul class="nav-links">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#bittersweet">BitterSweet</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <p>Copyright &#169; 2024 Anushka Bandara. All Rights Reserved.</p>
+        </footer>
+        <script src="script.js"></script>
+</body>
+
+</html>
