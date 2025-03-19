@@ -504,7 +504,7 @@ article .icon {
 
 .project-media {
     width: 100%; /* Ensures both images are the same size */
-    height: 350px; /* Fixed height for uniformity */
+    height: 400px; /* Fixed height for uniformity */
     object-fit: contain; /* Resizes without cropping */
     border-radius: 10px;
     border: 2px solid rgb(163, 163, 163); /* Adds a border */
